@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>FullStack Health</title>
+  </head>
+  <body>
+    
+    <section>
+      <div class="wrapper">
+        <header class="page-header">
+          <h1>TODO Projects</h1>
+        </header>
+        <main class="page-body cards">
+          <article class="card" onclick="handleModal(1)">
+            <header class="article-header">
+              <h2>Login Page</h2>
+            </header>
+            <img src="img/login-page.png" alt="Formulário de login">
+            <div class="content">
+              <p>
+                Simple login form that comes with a clean user interface to log in. This login form template has a title, input field for email and password, a link to forget password page, and two buttons for “register” and “sign-in”. Moreover, it has a decent color scheme inspired by Material Design.
+              </p>
+            </div> 
+          </article>
+          <article class="card" onclick="handleModal(1)">
+            <header class="article-header">
+              <h2>Image Slider</h2>
+            </header>
+            <img src="img/image-slider.png" alt="Image carroussel">
+            <div class="content">
+              <p>
+                This JavaScript source code helps you to create an image slider. It comes with all basic features like slide images with next previous buttons, dots navigation, and slides/images counter. You can easily integrate this code to make a super lightweight image slider.
+              </p>
+            </div> 
+          </article>
+          <article class="card" onclick="handleModal(1)">
+            <header class="article-header">
+              <h2>Bootstrap Lightbox</h2>
+            </header>
+            <img src="img/bootstrap-modallery.jpg" alt="Modal gallery of images">
+            <div class="content">
+              <p>
+                A lightweight jQuery plugin to create a bootstrap lightbox with multiple images. The plugin creates an image gallery in the Bootstrap modal. These images can be navigated through keyboard arrow keys. Also, it generates inline thumbnails in the modal gallery.
+              </p>
+            </div> 
+          </article>
+        </main>
+        <footer class="page-footer">
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a> 
+          <a href="#"><i class="fa fa-facebook"></i></a> 
+        </footer>
+         <!-- Modal HTML Code Start -->
+        <div class="modal-wrapper" id="customModal">
+          <div class="modal">
+            <div class="modal-header">
+              Card Header
+            </div>
+            <div class="modal-body">
+              Do you want to view a live demo?
+            </div>
+            <div class="modal-footer">
+              <button class="action-btn">Yes</button>
+              <button class="cancel-btn" onclick="handleModal(0)">Cancel</button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal HTML Code End -->
+      </div>    
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
